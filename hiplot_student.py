@@ -95,4 +95,15 @@ plt.legend()
 plt.show()
 print("Loss in last iteration wherer lr = {}: {}".format(learning_rates[number_of_loss_list], loss_lists[number_of_loss_list][-1]))
 
+import hiplot as hip
 hip.Experiment.from_iterable(parameters_list).display()
+
+"""### Zadania
+
+Tutaj najważniejsze to pobawić się różnymi parametrami i zobaczyć jak wpływają na funkcję straty. Najlepiej spóbować:
+
+* dodać zmienną liczbę neuronów w warstwie pośrednieć
+* dodać różne funkcje aktywacji
+* zmienić dane wyjściowe na trudniejsze (np. copy-paste z pliku pytorch3)
+"""
+
